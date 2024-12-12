@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Huge Scorpion and Walking Mushroom Hotpot - Dungeon Meshi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://cdn.wallpapersafari.com/80/65/vej4sk.jpg');
+            background-repeat: repeat;
+            height: 100vh;
+            margin: 0;
+            position: relative;
+        }
+nav {
+        position: relative;
+        z-index: 2;
+    }
+
+    .navbar-custom .navbar-nav .nav-link:hover {
+        color: #FFD700;
+    }
+
+    .navbar-brand {
+        margin-left: 20px;
+    }
+
+    .navbar-nav {
+        margin-left: 25px;
+        margin-right: auto;
+    }
+
+    .navbar-nav .nav-item {
+        padding-left: 5px;
+        padding-right: 20px;
+    }
+
+    .navbar form {
+        margin-left: 20px;
+    }
+
+    .navbar .search-input {
+        margin-right: 10px;
+    }
+
+    .navbar button {
+        margin-right: 20px;
+    }
+        .container {
+            max-width: 1200px;
+        }
+
+        .recipe-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #28A745;
+            margin-bottom: 30px;
+        }
+
+        .recipe-section {
+            background-color: rgba(255, 255, 255, 0.8); 
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .recipe-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .ingredients, .instructions {
+            margin-top: 30px;
+        }
+
+        .ingredients ul, .instructions ol {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .ingredients li, .instructions li {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .recipe-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .recipe-header img {
+            max-width: 40%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .label {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #444;
+            margin-bottom: 10px;
+        }
+
+        .step {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        
+        @media (max-width: 768px) {
+            .recipe-header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .recipe-header img {
+                max-width: 90%;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-danger navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="delicioso.png" alt="Dungeon Meshi logo" width="90px" height="35px">
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rip.html">Recipe Form</a></li>
+                    <li class="nav-item"><a class="nav-link" href="refr.html">Extras</a></li>
+                </ul>
+                <form class="d-flex">
+                    <input type="text" class="form-control search-input" name="text" placeholder="skimming..">
+                    <button class="btn btn-outline-dark" type="button">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="recipe-header">
+            <div>
+                <h1 class="recipe-title">【Huge Scorpion and Walking Mushroom Hotpot】</h1>
+                <p class="label text-white">≋Spicy, Savory, and Hearty Hotpot≋</p>
+            </div>
+            <img src="https://preview.redd.it/i-made-the-huge-scorpion-and-walking-mushroom-hotpot-v0-ofn4na27hwac1.jpeg?width=1080&crop=smart&auto=webp&s=e2059915f67f9eac7b5615f585fa8cc28d9989fc" alt="Hotpot" class="recipe-image mt-5">
+        </div>
+
+        <div class="recipe-section">
+            <div class="ingredients">
+                <h2 class="label">Ingredients:</h2>
+                <ul>
+                    <li>1 egg white</li>
+                    <li>250g shrimp</li>
+                    <li>1 tbsp corn starch</li>
+                    <li>1 tbsp xiao xing wine</li>
+                    <li>3 bell peppers</li>
+                    <li>Napa cabbage</li>
+                    <li>Shimeiji mushroom</li>
+                    <li>Dried kelp (for broth)</li>
+                    <li>Anchovy tablets (optional)</li>
+                    <li>4-5 tbsp miso paste</li>
+                    <li>Soy sauce (to taste)</li>
+                    <li>Shirataki noodles (optional)</li>
+                    <li>Potatoes (optional)</li>
+                    <li>Salt and pepper (to taste)</li>
+                </ul>
+            </div>
+
+            <div class="instructions">
+                <h2 class="label">Instructions:</h2>
+                <ol>
+                    <li class="step"><strong>Prepare the Broth:</strong> In a pot, simmer the dried kelp in boiled water for 20 minutes (or up to 3 hours for a richer flavor). Remove the kelp when done.</li>
+                    <li class="step"><strong>Prepare the Shrimp:</strong> Mince the shrimp until it becomes mushy. In a mixing bowl, combine the shrimp with corn starch, xiao xing wine, egg white, salt, and pepper. Mix thoroughly.</li>
+                    <li class="step"><strong>Prepare the Vegetables:</strong> Cut the shimeiji mushrooms in half, then slice them vertically. Slice the bell peppers and chop the napa cabbage into burrito-sized wraps. Optionally, peel and chop the potatoes.</li>
+                    <li class="step"><strong>Cook the Hotpot:</strong> In a pot, add the prepared shrimp mixture and allow it to cook. Then add the potatoes, bell peppers, cabbage, shimeiji mushrooms, and shirataki noodles. Simmer over medium heat for about 10 minutes.</li>
+                    <li class="step"><strong>Flavor the Broth:</strong> After removing the kelp, add the miso paste (4-5 tbsp) and anchovy tablets to the broth. Stir well to combine.</li>
+                    <li class="step"><strong>Finish the Soup:</strong> Add soy sauce to taste, then bring the soup to a gentle simmer. Once the ingredients are well-cooked and the flavors have melded, your hotpot is ready to serve!</li>
+                </ol>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kakiage Tempura Recipe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://cdn.wallpapersafari.com/80/65/vej4sk.jpg');
+            background-repeat: repeat;
+            height: 100vh;
+            margin: 0;
+            position: relative;
+        }
+        nav {
+        position: relative;
+        z-index: 2;
+    }
+
+    .navbar-custom .navbar-nav .nav-link:hover {
+        color: #FFD700;
+    }
+
+    .navbar-brand {
+        margin-left: 20px;
+    }
+
+    .navbar-nav {
+        margin-left: 25px;
+        margin-right: auto;
+    }
+
+    .navbar-nav .nav-item {
+        padding-left: 5px;
+        padding-right: 20px;
+    }
+
+    .navbar form {
+        margin-left: 20px;
+    }
+
+    .navbar .search-input {
+        margin-right: 10px;
+    }
+
+    .navbar button {
+        margin-right: 20px;
+    }
+
+        .container {
+            max-width: 1200px;
+        }
+
+        .recipe-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #28A745;
+            margin-bottom: 30px;
+        }
+
+        .recipe-section {
+            background-color: rgba(255, 255, 255, 0.8); 
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .recipe-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .ingredients, .instructions {
+            margin-top: 30px;
+        }
+
+        .ingredients ul, .instructions ol {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .ingredients li, .instructions li {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .recipe-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .recipe-header img {
+            max-width: 40%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .label {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #444;
+            margin-bottom: 10px;
+        }
+
+        .step {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+
+        @media (max-width: 768px) {
+            .recipe-header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .recipe-header img {
+                max-width: 90%;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-danger navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="delicioso.png" alt="Dungeon Meshi logo" width="90px" height="35px">
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rip.html">Recipe Form</a></li>
+                    <li class="nav-item"><a class="nav-link" href="refr.html">Extras</a></li>
+                </ul>
+                <form class="d-flex">
+                    <input type="text" class="form-control search-input" name="text" placeholder="skimming..">
+                    <button class="btn btn-outline-dark" type="button">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="recipe-header">
+            <div>
+                <h1 class="recipe-title">Big Bat Kakiage & Mandrake Tempura</h1>
+            </div>
+            <img src="https://i.redd.it/3r635ox6v57d1.jpeg" alt="Kakiage Tempura" class="recipe-image mt-5">
+        </div>
+
+        <div class="recipe-section">
+            <div class="ingredients">
+                <h2 class="label">Ingredients:</h2>
+                <ul>
+                    <li>1 Onion, thinly sliced</li>
+                    <li>1/2 Large Carrot, peeled and cut into thin strips</li>
+                    <li>1/4 lb Scallops, thinly sliced</li>
+                    <li>1 Large Egg</li>
+                    <li>1 Cup Ice Water</li>
+                    <li>1 Cup All-purpose Flour</li>
+                    <li>Vegetable Oil, for frying</li>
+                </ul>
+            </div>
+
+            <div class="instructions">
+                <h2 class="label">Instructions:</h2>
+                <ol>
+                    <li class="step"><strong>Prepare the Ingredients:</strong> Gather the onion, carrot, scallops, and other ingredients.</li>
+                    <li class="step"><strong>Make the Batter:</strong> Beat the egg in a large bowl. Add the ice water and sifted flour. Mix lightly to combine.</li>
+                    <li class="step"><strong>Heat the Oil:</strong> Heat about four inches of vegetable oil to 340°F in a deep pan over medium to medium-high heat.</li>
+                    <li class="step"><strong>Mix the Vegetables and Seafood:</strong> Add the onion slices, carrot strips, and scallops to the batter, mixing them in gently.</li>
+                    <li class="step"><strong>Fry the Tempura:</strong> Scoop the batter mixture with a spoon and drop it into the hot oil. Use chopsticks or tongs to shape the pieces while frying.</li>
+                    <li class="step"><strong>Cook Until Golden:</strong> Deep-fry the tempura until it is golden brown on both sides.</li>
+                    <li class="step"><strong>Drain and Serve:</strong> Drain the tempura on a cooling rack to remove excess oil. Serve with tempura dipping sauce.</li>
+                </ol>
+            </div>
+
+            <div class="tips">
+                <h3 class="label">Tips:</h3>
+                <ul>
+                    <li>Always mix the batter with chopsticks or a spoon to avoid overmixing. Overmixing makes the batter heavy.</li>
+                    <li>Use icy-cold water for the batter to make it stick together and absorb less oil.</li>
+                    <li>Ensure the oil is hot before frying. Test it by dropping a bit of batter into the oil—if it floats and sizzles, it's ready.</li>
+                    <li>Cut the vegetables and seafood to similar sizes for consistent texture and even cooking.</li>
+                    <li>Smaller pieces will result in a better crunch and fully cooked interior.</li>
+                    <li>After frying, drain the tempura on a cooling rack to avoid excess oil. Tempura is best when eaten fresh.</li>
+                    <li>If you have leftovers, reheat by briefly dipping them in hot oil to restore the crispiness.</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

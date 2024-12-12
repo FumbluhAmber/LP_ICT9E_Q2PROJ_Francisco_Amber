@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>🔥Dungeon Meshi's Exotics🐲</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"; rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	
+	
+	<style>
+    body {
+        background-image: url('Food back.jfif');
+        background-repeat: repeat;
+        height: 100vh;
+        margin: 0;
+        position: relative;
+        }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+        min-height: 100%;
+    }
+
+    nav {
+        position: relative;
+        z-index: 2;
+    }
+
+    .navbar-custom .navbar-nav .nav-link:hover {
+        color: #FFD700;
+    }
+
+    .navbar-brand {
+        margin-left: 20px;
+    }
+
+    .navbar-nav {
+        margin-left: 25px;
+        margin-right: auto;
+    }
+
+    .navbar-nav .nav-item {
+        padding-left: 5px;
+        padding-right: 20px;
+    }
+
+    .navbar form {
+        margin-left: 20px;
+    }
+
+    .navbar .search-input {
+        margin-right: 10px;
+    }
+
+    .navbar button {
+        margin-right: 20px;
+    }
+
+    .recipe-card {
+        background-color: #f8f9fa;
+        padding: 15px;
+        border-radius: 15px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+        top: 20px;
+        overflow: hidden;
+    }
+
+    .text-outline { color: white;
+            text-shadow: -1px -1px 0 #000, 
+            1px -1px 0 #000, 
+            -1px 1px 0 #000, 
+            1px 1px 0 #000;}
+    
+    .recipe-card:hover {
+        transform: translateY(-10px) rotate(-3deg);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .recipe-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .recipe-card .gif-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        pointer-events: none;
+        opacity: 0;  
+        transition: opacity 0.3s ease;
+    }
+
+    .recipe-card:hover .gif-overlay {
+        opacity: 1; 
+    }
+
+    .recipe-card .gif-overlay img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;  
+    }
+
+    .recipe-showcase {
+        margin-top: 60px;
+        padding: 30px 0;
+    }
+
+    .recipe-showcase h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #28A745;
+    }
+
+    .recipe-showcase .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .col {
+        flex: 1 1 calc(33% - 20px);
+        max-width: calc(33% - 20px);
+    }
+
+    @media (max-width: 768px) {
+        .col {
+            flex: 1 1 100%;
+            max-width: 100%;
+        }
+    }
+</style>
+
+<body>
+    <div class="overlay"></div>
+
+    <nav class="navbar navbar-expand-sm bg-danger navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="delicioso.png" alt="Dungeon Meshi logo" width="90px" height="35px">
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                   <li class="nav-item"><a class="nav-link" href="rip.html">Recipe Form</a></li>
+                    <li class="nav-item"><a class="nav-link" href="refr.html">Extras</a></li>
+                </ul>
+                <form class="d-flex">
+                    <input type="text" class="form-control search-input" name="text" placeholder="skimming..">
+                    <button class="btn btn-outline-dark" type="button">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container recipe-showcase">
+        <h2 class="text-center text-warning text-outline p-5">𝕯𝖚𝖓𝖌𝖊𝖔𝖓'𝖘 𝕰𝖝𝖔𝖙𝖎𝖈 𝕮𝖚𝖎𝖘𝖎𝖓𝖊𝖘</h2>
+        
+        
+<div class="row mb-4 justify-content-center text-center">
+    <div class="col-md-3">
+        <a href="cat.html"><button class="btn btn-success btn-lg w-100 text-black fw-bold">𝔄𝔭𝔭𝔢𝔱𝔦𝔷𝔢𝔯𝔰</button></a>
+    </div>
+    <div class="col-md-3">
+        <a href="curs.html"><button class="btn btn-danger btn-lg w-100 text-black fw-bold">𝔐𝔞𝔦𝔫 ℭ𝔬𝔲𝔯𝔰𝔢</button></a>
+    </div>
+    <div class="col-md-3">
+        <a href="index.html"><button class="btn btn-warning btn-lg w-100 text-black fw-bold">𝔉𝔞𝔳𝔬𝔯𝔦𝔱𝔢𝔰</button></a>
+    </div>
+</div>
+
+
+        <div class="row">
+            <div class="col">
+                <div class="recipe-card mb-3">
+                    <a href="mealdrag.html">
+                        <img src="cheap.jpg" alt="Recipe 1">
+                        <div class="gif-overlay">
+                            <img src="WIP.gif" alt="GIF overlay">
+                        </div>
+                    </a>
+                    <h5 class="text-center mt-2">Red Dragon Meal#1</h5>
+                </div>
+            </div>
+            <div class="col">
+                <div class="recipe-card mb-3">
+                    <a href="twodrag.html">
+                        <img src="cheap.jpg" alt="Recipe 2">
+                        <div class="gif-overlay">
+                            <img src="WIP.gif" alt="GIF overlay">
+                        </div>
+                    </a>
+                    <h5 class="text-center mt-2">Red Dragon Meal#2</h5>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="recipe-card mb-3">
+                    <a href="tailsoup.html">
+                        <img src="cheap.jpg" alt="Recipe 3">
+                        <div class="gif-overlay">
+                            <img src="WIP.gif" alt="GIF overlay">
+                        </div>
+                    </a>
+                    <h5 class="text-center mt-2">Red Dragon Meal#3</h5>
+                </div>
+            </div>
+
+            
+            <div class="col">
+                <div class="recipe-card mb-3">
+                    <a href="ome.html">
+                        <img src="https://static.wikia.nocookie.net/delicious-in-dungeon/images/e/ea/Mandrake_and_Basilisk_Omelette_%28Anime%29.png/revision/latest/scale-to-width-down/1200?cb=20240111211525" alt="Recipe 4">
+                        <div class="gif-overlay">
+                            <img src="WIP.gif" alt="GIF overlay">
+                        </div>
+                    </a>
+                    <h5 class="text-center mt-2">Mandrake & Basilisk Omelette</h5>
+                </div>
+            </div>
+
+            
+            <div class="col">
+                <div class="recipe-card mb-3">
+                    <a href="hotpot.html">
+                        <img src="https://static.wikia.nocookie.net/delicious-in-dungeon/images/6/66/Huge_Scorpion_and_Walking_Mushroom_Hotpot_%28Anime%29.png/revision/latest/scale-to-width-down/1200?cb=20240104194112" alt="Recipe 5">
+                        <div class="gif-overlay">
+                            <img src="WIP.gif" alt="GIF overlay">
+                        </div>
+                    </a>
+                    <h5 class="text-center mt-2">Scorpion & Mushroom Hotpot</h5>
+                </div>
+            </div>
+
+            
+            <div class="col">
+                <div class="recipe-card mb-3">
+                    <a href="baro.html">
+                        <img src="https://static.wikia.nocookie.net/delicious-in-dungeon/images/c/ca/Barometz_Balut_%28Anime%29.png/revision/latest/scale-to-width-down/1200?cb=20240517002417" alt="Recipe 6">
+                        <div class="gif-overlay">
+                            <img src="WIP.gif" alt="GIF overlay">
+                        </div>
+                    </a>
+                    <h5 class="text-center mt-2">Barometz Balut</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
